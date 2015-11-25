@@ -1,0 +1,11 @@
+{
+  "name": "ubiquitous_capture",
+  "version": "0.0.1",
+  "description": "Capture data in various ways to collect and share",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Rob Ballou",
+  "license": "ISC"
+}
