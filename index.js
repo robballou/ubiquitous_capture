@@ -11,7 +11,7 @@ var settings = require('./settings');
 app.locals.settings = settings;
 
 var collector = require('./lib/collector');
-collector.app = app;
+app.locals.collector = collector;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req, res) {
   var message = collector.createMessage(req);
-  collector.message(message);
+  collector.message(app, message);
   return res.status(200).json({message: 'roger that'});
 });
 

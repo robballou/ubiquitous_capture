@@ -5,3 +5,5 @@ node_modules
 *.p12
 
 settings.js
+cache
+*.db
