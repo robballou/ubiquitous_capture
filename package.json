@@ -4,8 +4,19 @@
   "description": "Capture data in various ways to collect and share",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "dev": "./node_modules/.bin/nodemon index.js"
   },
   "author": "Rob Ballou",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "nodemon": "^1.8.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "express-jwt": "^3.3.0",
+    "require-dir": "^0.3.0"
+  }
 }
