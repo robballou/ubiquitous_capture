@@ -19,7 +19,7 @@ Then create an API to make this shareable and usable in a variety of ways. Creat
 
 ## Parts: Server
 
-The UC server has two sides:
+The Ubiquitous Capture (UC) server has two sides:
 
 1. It accepts data which it "captures". The capture portion may have some default behavior but generally will be extended with plugins/modules/things to do the interesting stuff. Captured messages can filter into multiple workflows, which probably won't be part of the server per se.
 2. Handles requests to use data. This will be interesting because we need to have plugin/module/thing endpoints. For example, if a message is saved into a time based store, we may need ask that store for information.
